@@ -3,7 +3,7 @@
 #Updated: 15 July 2026
 #################
 #CONTACT=adops@yodo1.com
-#OWNERDOMAIN=ads-txt.site
+#OWNERDOMAIN=maricof.online
 ################
 MANAGERDOMAIN=yodo1.com
 ###############
