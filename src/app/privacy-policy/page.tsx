@@ -3,6 +3,33 @@ import { siteConfig } from "@/config/site";
 
 const privacySections = [
   {
+    id: "super-speaker-cleaner",
+    title: "Super Speaker Cleaner: App-Specific Privacy Information",
+    body: [
+      "This policy applies specifically to Super Speaker Cleaner, published by Maricof on Android with package name com.maricof.speakercleaner.app, as well as the other services described below. For this app, the following specific information supplements the general sections of this policy.",
+      "The cleaning and speaker-test features generate sound tones locally on your device. These features do not record microphone audio or upload audio recordings. You do not need to create an account to use them. Temporary tone files are stored in the app's cache and can be removed by clearing the app's data or uninstalling it.",
+      "When advertising is enabled, Super Speaker Cleaner uses Yodo1 MAS, a third-party advertising mediation SDK, to serve ads through Yodo1 and its participating advertising networks, including Google AdMob. Those providers may collect and share data directly from your device. The data may include the Android Advertising ID (AAID) and other device identifiers, IP address and approximate location inferred from it, device model, operating system, language, app version, app and ad interactions, and diagnostic or performance information. The data processed depends on the active advertising networks, SDK configuration, device settings, and applicable consent choices.",
+      "Yodo1's Google Play disclosure guidance identifies approximate location and device or other identifiers as collected and shared for analytics and advertising or marketing. In this app, advertising-related processing can support ad delivery, measurement, frequency control, analytics, and fraud prevention; personalization is subject to applicable law and consent. Advertising partners may retain information beyond the immediate ad request under their own retention policies.",
+      "The Android app declares com.google.android.gms.permission.AD_ID so advertising SDKs can access the Advertising ID when it is available and permitted. Declaring this permission does not itself grant consent to personalized advertising, and the permission is not a microphone or precise-location permission. You can reset or delete your Advertising ID and manage advertising preferences in your Android or Google privacy settings; the available controls depend on your device and Android version. Limiting personalization does not necessarily stop all ads or all advertising-related data processing.",
+      `Where a consent message is presented, use it to make the available advertising choices. You can contact ${siteConfig.email} for privacy questions, consent-withdrawal assistance, or access and deletion requests, and identify Super Speaker Cleaner in your message. Clearing app data or uninstalling removes local app data but does not automatically delete information already held by Yodo1 or advertising networks. We can help direct requests to the relevant provider, whose own policies and applicable retention requirements govern its handling of that information.`,
+      "The links below describe Yodo1's privacy practices, its Google Play data-disclosure guidance, and Google's practices for partner apps. The app's Google Play Data safety disclosure should be read together with this policy.",
+    ],
+    links: [
+      {
+        label: "Yodo1 Privacy Policy",
+        href: "https://policy.yodo1.com/website/en/privacy.html",
+      },
+      {
+        label: "Yodo1 MAS: Google Play Data Protection Guidance",
+        href: "https://developers.yodo1.com/docs/sdk/additional/play_store/",
+      },
+      {
+        label: "How Google Uses Information From Partner Apps",
+        href: "https://policies.google.com/technologies/partner-sites",
+      },
+    ],
+  },
+  {
     title: "1. Who We Are",
     body: [
       `${siteConfig.name} publishes mobile applications, mobile games, websites, support channels, and related digital services. In this Privacy Policy, "${siteConfig.name}", "we", "us", and "our" mean the publisher and operator of the services that link to this Privacy Policy.`,
@@ -221,6 +248,7 @@ export default function PrivacyPolicyPage() {
       title="Privacy Policy"
       intro={`This Privacy Policy explains how ${siteConfig.name} may collect, use, disclose, protect, retain, and transfer information in connection with our mobile apps, mobile games, websites, and related services.`}
       sections={privacySections}
+      lastUpdated="October 25, 2026"
     />
   );
 }
